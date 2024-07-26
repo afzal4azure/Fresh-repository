@@ -1,0 +1,62 @@
+Advanced topic of GIT
+We have learned to commit the GIT but what if we forgotten to add lines while you are committing then amend command is used and this works on last commit 04:14 
+git config --global user.name "Afzal Afaque"
+git config --global user.email "afzal.itengineer@gmail.com"
+git config --global core.editor "vim"
+git config --global color.ui auto (GIT Remote concept 
+# cd git 
+#git init 
+Ammend command  
+Created a file #vim app.py and commit the file 
+Print (“hello world”) :wq
+ 
+In the same way Created a file #vim main.py and commit the file but data.py file is not actually exists but only passes in the comment and now we have created the data.py file 
+ 
+#vim data.py 
+So here if we commit the data.py then a third commit will be added, but I want to merge the data.py to last commit so we use ammend
+How to add two file through one command:-
+#vim  file1.txt
+#vim file2.txt
+#git add file1.txt
+#git add file2.txt
+
+#git add . (This will add both file1.txt and file2.txt) now these are tracked file.
+How to remove the tracked file 
+#git restore --staged file2.txt this will again make file file2.txt in untracked stage.
+Now when we commit then only one file is commit file2.txt will not go to commit stage 
+#git commit -m “added file1”
+Git Forge 
+Git CLI + Git GUI = Git Forge and Githib is the example which is cloud based and GitLab is the another example which works on prem(own server)
+GitHub
+1.	Public 
+Can download but upload need authorization? 
+•	Private 
+Required authorization for download but upload. 
+Adding remote Git
+If we want add remote git and GitHub to command line then how we can do it.
+Scenario 1
+If Remote repository already exists in the organization then it can be downloaded.
+Scenario 2
+ if it is not exit then we have to create it By default Remote repository doesn’t .
+How to create a remote Repo 
+Step 1
+Login to github.com ---> creating a account and logged-in the account
+Step 2
+At the right handside click the + icon
+ 
+
+Step 3
+And click on new repostory
+ 
+Step 4
+ 
+Step 5 Provide any repository name 
+Step 6    select any of below
+o	public 
+o	private 
+Step 7 Create repository
+Adding a new files in through git browser
+Step 1
+ 
+Step 2
+Click Create new file 
